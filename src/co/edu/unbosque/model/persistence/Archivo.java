@@ -10,6 +10,7 @@ public class Archivo {
 	
 	private File file;
 	// perra
+	//sucia
 	
 	public Archivo() {
 		file = new File("datos\\registro.txt");
