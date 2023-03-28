@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 public class Archivo {
 	
 	private File file;
+	// perra
 	
 	public Archivo() {
 		file = new File("datos\\registro.txt");
