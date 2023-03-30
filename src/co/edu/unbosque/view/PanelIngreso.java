@@ -4,54 +4,143 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
+import java.awt.Dimension;
+import javax.swing.BorderFactory;
+import java.awt.Font;
+import javax.swing.border.Border;
+import javax.swing.border.CompoundBorder;
+import java.awt.Color;
+
 
 public class PanelIngreso extends JPanel {
 
-	private JTextField campo_frase;
+	private JTextField Propietario;
+	private JTextField Tamaño;
+	private JTextField Nhabitaciones;
+	private JTextField Direccion;
+	private JTextField Propiedad;
+
 	private JButton boton_escribir;
 	private JButton boton_ver;
 	private JButton boton_borrar;
 
 	public PanelIngreso() {
-
 		setLayout(null);
-
 		inicializarComponentes();
-
-		setBorder(new TitledBorder("Ingreso de la información:"));
+		setBorder(new TitledBorder("Ingreso información Vivienda:"));
+		setBackground(new Color(29, 161, 242)); // Azul Twitter
 	}
+	
 
 	public void inicializarComponentes() {
-		campo_frase = new JTextField();
-		campo_frase.setBounds(25, 25, 280, 25);
-		add(campo_frase);
 
+		// Crear JTextField Propietario
+		Propietario = new JTextField();
+		Propietario.setBounds(25, 25, 280, 40);
+		TitledBorder border = BorderFactory.createTitledBorder("Propietario");
+		Border emptyBorder = BorderFactory.createEmptyBorder(0, 5, 0, 5);
+		Propietario.setBorder(new CompoundBorder(border, emptyBorder));
+		Propietario.setFont(new Font("Arial", Font.PLAIN, 16));
+		add(Propietario);
+
+		// Crear JTextField Tamaño
+		Tamaño = new JTextField();
+		Tamaño.setBounds(25, 70, 280, 40);
+		TitledBorder borderTamaño = BorderFactory.createTitledBorder("Tamaño");
+		Border emptyBorderTamaño = BorderFactory.createEmptyBorder(0, 5, 0, 5);
+		Tamaño.setBorder(new CompoundBorder(borderTamaño, emptyBorderTamaño));
+		Tamaño.setFont(new Font("Arial", Font.PLAIN, 16));
+		add(Tamaño);
+
+		// Crear JTextField Nhabitaciones
+		Nhabitaciones = new JTextField();
+		Nhabitaciones.setBounds(25, 115, 280, 40);
+		TitledBorder borderNhabitaciones = BorderFactory.createTitledBorder("Número de Habitaciones");
+		Border emptyBorderNhabitaciones = BorderFactory.createEmptyBorder(0, 5, 0, 5);
+		Nhabitaciones.setBorder(new CompoundBorder(borderNhabitaciones, emptyBorderNhabitaciones));
+		Nhabitaciones.setFont(new Font("Arial", Font.PLAIN, 16));
+		add(Nhabitaciones);
+
+		// Crear JTextField Direccion
+		Direccion = new JTextField();
+		Direccion.setBounds(25, 160, 280, 40);
+		TitledBorder borderDireccion = BorderFactory.createTitledBorder("Dirección");
+		Border emptyBorderDireccion = BorderFactory.createEmptyBorder(0, 5, 0, 5);
+		Direccion.setBorder(new CompoundBorder(borderDireccion, emptyBorderDireccion));
+		Direccion.setFont(new Font("Arial", Font.PLAIN, 16));
+		add(Direccion);
+
+		// Crear JTextField Propiedad
+		Propiedad = new JTextField();
+		Propiedad.setBounds(25, 205, 280, 40);
+		TitledBorder borderPropiedad = BorderFactory.createTitledBorder("Tipo de Propiedad");
+		Border emptyBorderPropiedad = BorderFactory.createEmptyBorder(0, 5, 0, 5);
+		Propiedad.setBorder(new CompoundBorder(borderPropiedad, emptyBorderPropiedad));
+		Propiedad.setFont(new Font("Arial", Font.PLAIN, 16));
+		add(Propiedad);
+
+		//Botones Escribir
 		boton_escribir = new JButton("Escribir");
-		boton_escribir.setBounds(310, 25, 100, 25);
+		boton_escribir.setBounds(310, 25, 120, 25);
 		boton_escribir.setActionCommand("ESCRIBIR");
 		add(boton_escribir);
 
+		//Botones Ver
 		boton_ver = new JButton("Ver");
-		boton_ver.setBounds(80, 140, 120, 25);
+		boton_ver.setBounds(310, 55, 120, 25);
 		boton_ver.setActionCommand("VER");
 		add(boton_ver);
-		
-		boton_borrar= new JButton("Limpiar Campo");
-		boton_borrar.setBounds(220, 140, 120, 25);
+
+		//Botones Borrar
+		boton_borrar = new JButton("Limpiar Campo");
+		boton_borrar.setBounds(310, 80, 120, 25);
 		boton_borrar.setActionCommand("BORRAR");
 		add(boton_borrar);
 	}
 
-	public JTextField getCampo_frase() {
-		return campo_frase;
+
+	public JTextField getPropietario() {
+		return this.Propietario;
 	}
 
-	public void setCampo_frase(JTextField campo_frase) {
-		this.campo_frase = campo_frase;
+	public void setPropietario(JTextField Propietario) {
+		this.Propietario = Propietario;
+	}
+
+	public JTextField getTamaño() {
+		return this.Tamaño;
+	}
+
+	public void setTamaño(JTextField Tamaño) {
+		this.Tamaño = Tamaño;
+	}
+
+	public JTextField getNhabitaciones() {
+		return this.Nhabitaciones;
+	}
+
+	public void setNhabitaciones(JTextField Nhabitaciones) {
+		this.Nhabitaciones = Nhabitaciones;
+	}
+
+	public JTextField getDireccion() {
+		return this.Direccion;
+	}
+
+	public void setDireccion(JTextField Direccion) {
+		this.Direccion = Direccion;
+	}
+
+	public JTextField getPropiedad() {
+		return this.Propiedad;
+	}
+
+	public void setPropiedad(JTextField Propiedad) {
+		this.Propiedad = Propiedad;
 	}
 
 	public JButton getBoton_escribir() {
-		return boton_escribir;
+		return this.boton_escribir;
 	}
 
 	public void setBoton_escribir(JButton boton_escribir) {
@@ -59,7 +148,7 @@ public class PanelIngreso extends JPanel {
 	}
 
 	public JButton getBoton_ver() {
-		return boton_ver;
+		return this.boton_ver;
 	}
 
 	public void setBoton_ver(JButton boton_ver) {
@@ -67,11 +156,12 @@ public class PanelIngreso extends JPanel {
 	}
 
 	public JButton getBoton_borrar() {
-		return boton_borrar;
+		return this.boton_borrar;
 	}
 
 	public void setBoton_borrar(JButton boton_borrar) {
 		this.boton_borrar = boton_borrar;
 	}
 	
+
 }
