@@ -1,5 +1,5 @@
 
-Propiedad # null1 [ Dirección: cll168 45a 96 ]
-Tamaño: 12m
-N° de Habitaciones: 4 Propietario: juanito
+Propiedad # null1 [ Dirección: ff ]
+Tamaño: ss
+N° de Habitaciones: dd Propietario: aa
 ******************************************************
