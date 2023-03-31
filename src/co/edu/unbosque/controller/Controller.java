@@ -29,21 +29,33 @@ public class Controller implements ActionListener {
 
 		String comando = e.getActionCommand();
 
+
 		if (comando.equals("VER")) {
 			String texto = documento.leerDocumento();
 			vista.getPanel_archivo().getArea_texto().setText(texto);
 		} else if (comando.equals("ESCRIBIR")) {
 			String texto = "";
-			String frase = vista.getPanel_botones().getPropietario().getText();
+			String direccion = vista.getPanel_botones().getDireccion().getText();
+			String tamaño = vista.getPanel_botones().getTamaño().getText();
+			String habitaciones = vista.getPanel_botones().getNhabitaciones().getText();
+			String propietario = vista.getPanel_botones().getPropietario().getText();
+
 			if (documento.getContenido() != null) {
-				texto = documento.actualizarDocumento(documento.getContenido() + "\n" + frase);
+				texto = documento.actualizarDocumento(documento.getContenido() + "\n" +
+						"Propiedad # " + (documento.obtenerNumeroPropiedades()+1) + " [ Dirección: " + direccion + " ]\n" +
+						"Tamaño: " + tamaño + "\n" +
+						"N° de Habitaciones: " + habitaciones + " Propietario: " + propietario+ "\n******************************************************");
 			} else {
-				texto = documento.actualizarDocumento(texto);
+				texto = documento.actualizarDocumento("Propiedad # 1 [ Dirección: " + direccion + " ]\n" +
+						"Tamaño: " + tamaño + "\n" +
+						"N° de Habitaciones: " + habitaciones + " Propietario: " + propietario+ "\n******************************************************");
 			}
+
 			vista.getPanel_archivo().getArea_texto().setText(texto);
 		} else if (comando.equals("BORRAR")) {
 			vista.getPanel_archivo().getArea_texto().setText("");
 		}
+
 	}
 
 }
