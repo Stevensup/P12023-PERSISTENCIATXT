@@ -27,14 +27,14 @@ public class PanelIngreso extends JPanel {
 		setLayout(null);
 		inicializarComponentes();
 		setBorder(new TitledBorder("Ingreso información Vivienda:"));
-		// setBackground(new Color(105, 145, 245));
+		setBackground(new Color(255, 225, 123));
 	}
 
 	public void inicializarComponentes() {
 
 		// Crear JTextField Propietario
 		Propietario = new JTextField();
-		Propietario.setBounds(25, 25, 280, 40);
+		Propietario.setBounds(75, 35, 280, 40);
 		TitledBorder border = BorderFactory.createTitledBorder("Propietario");
 		Border emptyBorder = BorderFactory.createEmptyBorder(0, 5, 0, 5);
 		Propietario.setBorder(new CompoundBorder(border, emptyBorder));
@@ -43,7 +43,7 @@ public class PanelIngreso extends JPanel {
 
 		// Crear JTextField Tamaño
 		Tamaño = new JTextField();
-		Tamaño.setBounds(25, 70, 280, 40);
+		Tamaño.setBounds(75, 80, 280, 40);
 		TitledBorder borderTamaño = BorderFactory.createTitledBorder("Tamaño");
 		Border emptyBorderTamaño = BorderFactory.createEmptyBorder(0, 5, 0, 5);
 		Tamaño.setBorder(new CompoundBorder(borderTamaño, emptyBorderTamaño));
@@ -52,7 +52,7 @@ public class PanelIngreso extends JPanel {
 
 		// Crear JTextField Nhabitaciones
 		Nhabitaciones = new JTextField();
-		Nhabitaciones.setBounds(25, 115, 280, 40);
+		Nhabitaciones.setBounds(75, 125, 280, 40);
 		TitledBorder borderNhabitaciones = BorderFactory.createTitledBorder("Número de Habitaciones");
 		Border emptyBorderNhabitaciones = BorderFactory.createEmptyBorder(0, 5, 0, 5);
 		Nhabitaciones.setBorder(new CompoundBorder(borderNhabitaciones, emptyBorderNhabitaciones));
@@ -61,7 +61,7 @@ public class PanelIngreso extends JPanel {
 
 		// Crear JTextField Direccion
 		Direccion = new JTextField();
-		Direccion.setBounds(25, 160, 280, 40);
+		Direccion.setBounds(75, 170, 280, 40);
 		TitledBorder borderDireccion = BorderFactory.createTitledBorder("Dirección");
 		Border emptyBorderDireccion = BorderFactory.createEmptyBorder(0, 5, 0, 5);
 		Direccion.setBorder(new CompoundBorder(borderDireccion, emptyBorderDireccion));
@@ -70,7 +70,7 @@ public class PanelIngreso extends JPanel {
 
 		// Crear JTextField Propiedad
 		Propiedad = new JTextField();
-		Propiedad.setBounds(25, 205, 280, 40);
+		Propiedad.setBounds(75, 215, 280, 40);
 		TitledBorder borderPropiedad = BorderFactory.createTitledBorder("Tipo de Propiedad");
 		Border emptyBorderPropiedad = BorderFactory.createEmptyBorder(0, 5, 0, 5);
 		Propiedad.setBorder(new CompoundBorder(borderPropiedad, emptyBorderPropiedad));
@@ -79,19 +79,19 @@ public class PanelIngreso extends JPanel {
 
 		// Botones Escribir
 		boton_escribir = new JButton("Escribir");
-		boton_escribir.setBounds(310, 25, 120, 25);
+		boton_escribir.setBounds(380, 35, 120, 25);
 		boton_escribir.setActionCommand("ESCRIBIR");
 		add(boton_escribir);
 
 		// Botones Ver
 		boton_ver = new JButton("Ver");
-		boton_ver.setBounds(310, 55, 120, 25);
+		boton_ver.setBounds(380, 65, 120, 25);
 		boton_ver.setActionCommand("VER");
 		add(boton_ver);
 
 		// Botones Borrar
 		boton_borrar = new JButton("Limpiar Campo");
-		boton_borrar.setBounds(310, 80, 120, 25);
+		boton_borrar.setBounds(380, 90, 120, 25);
 		boton_borrar.setActionCommand("BORRAR");
 		add(boton_borrar);
 	}

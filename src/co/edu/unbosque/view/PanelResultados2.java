@@ -7,15 +7,15 @@ import javax.swing.border.TitledBorder;
 import java.awt.Color;
 
 
-public class PanelResultados extends JPanel {
+public class PanelResultados2 extends JPanel {
 
 	private JTextArea area_texto;
 
-	public PanelResultados() {
+	public PanelResultados2() {
 		setLayout(null);
 		inicializarComponentes();
-		setBorder(new TitledBorder("1. Archivo:"));
-		setBackground(new Color(255, 225, 123));
+		setBorder(new TitledBorder("2. Archivo:"));
+		setBackground(new Color(255, 255, 200));
 	}
 
 	public void inicializarComponentes() {
