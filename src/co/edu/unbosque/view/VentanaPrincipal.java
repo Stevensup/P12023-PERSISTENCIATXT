@@ -17,7 +17,7 @@ public class VentanaPrincipal extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(1200, 800);
 		getContentPane().setLayout(null);
-		getContentPane().setBackground(Color.WHITE);
+		getContentPane().setBackground(Color.GRAY);
 		getContentPane().setLayout(new GridLayout(2,2));
 
 		inicializarComponentes();
@@ -28,6 +28,7 @@ public class VentanaPrincipal extends JFrame {
 	}
 
 	private void inicializarComponentes() {
+		//VIVIENDA
 		panel_botones = new PanelIngreso();
 		panel_botones.setBounds(25, 25, 535, 300);
 		getContentPane().add(panel_botones);
@@ -36,6 +37,7 @@ public class VentanaPrincipal extends JFrame {
 		panel_archivo.setBounds(25, 300, 535, 400);
 		getContentPane().add(panel_archivo);
 
+		//ARRENDATARIOS
 		panel_botones = new PanelIngreso();
 		panel_botones.setBounds(25, 25, 535, 300);
 		getContentPane().add(panel_botones);

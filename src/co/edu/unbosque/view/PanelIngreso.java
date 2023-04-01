@@ -11,7 +11,6 @@ import javax.swing.border.Border;
 import javax.swing.border.CompoundBorder;
 import java.awt.Color;
 
-
 public class PanelIngreso extends JPanel {
 
 	private JTextField Propietario;
@@ -28,9 +27,8 @@ public class PanelIngreso extends JPanel {
 		setLayout(null);
 		inicializarComponentes();
 		setBorder(new TitledBorder("Ingreso información Vivienda:"));
-		setBackground(new Color(29, 161, 242)); // Azul Twitter
+		// setBackground(new Color(105, 145, 245));
 	}
-	
 
 	public void inicializarComponentes() {
 
@@ -79,25 +77,24 @@ public class PanelIngreso extends JPanel {
 		Propiedad.setFont(new Font("Arial", Font.PLAIN, 16));
 		add(Propiedad);
 
-		//Botones Escribir
+		// Botones Escribir
 		boton_escribir = new JButton("Escribir");
 		boton_escribir.setBounds(310, 25, 120, 25);
 		boton_escribir.setActionCommand("ESCRIBIR");
 		add(boton_escribir);
 
-		//Botones Ver
+		// Botones Ver
 		boton_ver = new JButton("Ver");
 		boton_ver.setBounds(310, 55, 120, 25);
 		boton_ver.setActionCommand("VER");
 		add(boton_ver);
 
-		//Botones Borrar
+		// Botones Borrar
 		boton_borrar = new JButton("Limpiar Campo");
 		boton_borrar.setBounds(310, 80, 120, 25);
 		boton_borrar.setActionCommand("BORRAR");
 		add(boton_borrar);
 	}
-
 
 	public JTextField getPropietario() {
 		return this.Propietario;
@@ -162,6 +159,5 @@ public class PanelIngreso extends JPanel {
 	public void setBoton_borrar(JButton boton_borrar) {
 		this.boton_borrar = boton_borrar;
 	}
-	
 
 }

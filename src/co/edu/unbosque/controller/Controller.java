@@ -52,7 +52,6 @@ public class Controller implements ActionListener {
                               "N° de Habitaciones: " + habitaciones + " Propietario: " + propietario
                               + "\n******************************************************");
                }
-
                vista.getPanel_archivo().getArea_texto().setText(texto);
           } else if (comando.equals("BORRAR")) {
                vista.getPanel_archivo().getArea_texto().setText("");

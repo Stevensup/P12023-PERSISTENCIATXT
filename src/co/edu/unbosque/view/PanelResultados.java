@@ -4,6 +4,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.border.TitledBorder;
+import java.awt.Color;
+
 
 public class PanelResultados extends JPanel {
 
@@ -24,6 +26,7 @@ public class PanelResultados extends JPanel {
 		area_texto.setBounds(25, 50, 380, 320);
 		JScrollPane panel = new JScrollPane(area_texto);
 		panel.setBounds(25, 50, 480, 320);
+		panel.setBackground(new Color(105, 145, 245));
 		add(panel);
 	}
 
