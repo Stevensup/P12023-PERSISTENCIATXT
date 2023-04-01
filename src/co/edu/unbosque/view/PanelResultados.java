@@ -5,25 +5,25 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.border.TitledBorder;
 
-public class PanelResultados extends JPanel{
-	
+public class PanelResultados extends JPanel {
+
 	private JTextArea area_texto;
-		
+
 	public PanelResultados() {
-		
+
 		setLayout(null);
 
 		inicializarComponentes();
 
 		setBorder(new TitledBorder("Archivo:"));
-		
+
 	}
 
 	public void inicializarComponentes() {
 		area_texto = new JTextArea();
-		area_texto.setBounds(25, 25, 380, 320);
+		area_texto.setBounds(25, 50, 380, 320);
 		JScrollPane panel = new JScrollPane(area_texto);
-		panel.setBounds(25, 25, 380, 320);
+		panel.setBounds(25, 50, 480, 320);
 		add(panel);
 	}
 
@@ -34,5 +34,5 @@ public class PanelResultados extends JPanel{
 	public void setArea_texto(JTextArea area_texto) {
 		this.area_texto = area_texto;
 	}
-	
+
 }

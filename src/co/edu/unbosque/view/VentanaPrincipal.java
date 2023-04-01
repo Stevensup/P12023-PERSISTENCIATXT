@@ -2,21 +2,23 @@ package co.edu.unbosque.view;
 
 import java.awt.Color;
 import java.io.File;
-
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
 
 public class VentanaPrincipal extends JFrame {
-	
+
 	private PanelIngreso panel_botones;
-	private PanelResultados panel_archivo;	
+	private PanelResultados panel_archivo;
 
 	public VentanaPrincipal() {
 		setTitle("Persistencia: ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(600, 800);
+		setSize(1200, 800);
 		getContentPane().setLayout(null);
 		getContentPane().setBackground(Color.WHITE);
+		getContentPane().setLayout(new GridLayout(2,2));
 
 		inicializarComponentes();
 
@@ -31,7 +33,15 @@ public class VentanaPrincipal extends JFrame {
 		getContentPane().add(panel_botones);
 
 		panel_archivo = new PanelResultados();
-		panel_archivo.setBounds(25, 300, 535, 320);
+		panel_archivo.setBounds(25, 300, 535, 400);
+		getContentPane().add(panel_archivo);
+
+		panel_botones = new PanelIngreso();
+		panel_botones.setBounds(25, 25, 535, 300);
+		getContentPane().add(panel_botones);
+
+		panel_archivo = new PanelResultados();
+		panel_archivo.setBounds(600, 300, 535, 400);
 		getContentPane().add(panel_archivo);
 
 	}

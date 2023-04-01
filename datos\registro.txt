@@ -1,5 +1,9 @@
 
-Propiedad # null1 [ Dirección: ff ]
-Tamaño: ss
-N° de Habitaciones: dd Propietario: aa
+Propiedad # null1 [ Dirección: cll169 45a-96 ]
+Tamaño: 75m
+N° de Habitaciones: 4 Propietario: juan ochoa
+******************************************************
+Propiedad # null1 [ Dirección: xzcxz ]
+Tamaño: zxczc
+N° de Habitaciones: xzczz Propietario: cczcxx
 ******************************************************
