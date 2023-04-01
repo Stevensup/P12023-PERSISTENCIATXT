@@ -79,19 +79,19 @@ public class PanelIngreso extends JPanel {
 
 		// Botones Escribir
 		boton_escribir = new JButton("Escribir");
-		boton_escribir.setBounds(380, 35, 120, 25);
+		boton_escribir.setBounds(400, 270, 120, 25);
 		boton_escribir.setActionCommand("ESCRIBIR");
 		add(boton_escribir);
 
 		// Botones Ver
 		boton_ver = new JButton("Ver");
-		boton_ver.setBounds(380, 65, 120, 25);
+		boton_ver.setBounds(400, 300, 120, 25);
 		boton_ver.setActionCommand("VER");
 		add(boton_ver);
 
 		// Botones Borrar
 		boton_borrar = new JButton("Limpiar Campo");
-		boton_borrar.setBounds(380, 90, 120, 25);
+		boton_borrar.setBounds(400, 330, 120, 25);
 		boton_borrar.setActionCommand("BORRAR");
 		add(boton_borrar);
 	}

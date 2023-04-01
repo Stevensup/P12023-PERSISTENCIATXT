@@ -19,7 +19,7 @@ public class VentanaPrincipal extends JFrame {
 	public VentanaPrincipal() {
 		setTitle("Persistencia: ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(1200, 800);
+		setSize(1100, 800);
 		getContentPane().setLayout(null);
 		getContentPane().setLayout(new GridLayout(2, 2));
 

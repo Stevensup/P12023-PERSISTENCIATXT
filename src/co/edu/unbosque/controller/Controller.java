@@ -38,6 +38,7 @@ public class Controller implements ActionListener {
                String tamaño = vista.getPanel_botones().getTamaño().getText();
                String habitaciones = vista.getPanel_botones().getNhabitaciones().getText();
                String propietario = vista.getPanel_botones().getPropietario().getText();
+               String inquilino = vista.getPanel_botones2().getInquilino().getText();
 
                if (documento.getContenido() != null) {
                     texto = documento.actualizarDocumento(documento.getContenido() + "\n" +
