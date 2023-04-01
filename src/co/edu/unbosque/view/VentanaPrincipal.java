@@ -8,11 +8,11 @@ import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 
 public class VentanaPrincipal extends JFrame {
-	//Vivienda
+	// Vivienda
 	private PanelIngreso panel_botones;
 	private PanelResultados panel_archivo;
 
-	//arrendatarios
+	// arrendatarios
 	private PanelIngreso2 panel_botones2;
 	private PanelResultados2 panel_archivo2;
 

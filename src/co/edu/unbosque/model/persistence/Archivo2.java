@@ -6,19 +6,19 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.InputStreamReader;
 
-public class Archivo {
+public class Archivo2 {
 
 	private File file;
 
-	public Archivo() {
-		file = new File("datos\\registro.txt");
+	public Archivo2() {
+		file = new File("datos\\registro2.txt");
 	}
 
-	public Archivo(File file) {
+	public Archivo2(File file) {
 		this.file = file;
 	}
 
-	public String leerArchivo() {
+	public String leerArchivo2() {
 		String rta = "";
 		FileInputStream fis = null;
 		InputStreamReader isr = null;
@@ -51,14 +51,14 @@ public class Archivo {
 		return rta;
 	}
 
-	public String escribirArchivo(String texto) {
+	public String escribirArchivo2(String texto) {
 		String rta = "";
 		try {
 			FileWriter lineatxt = new FileWriter(file);
 			String linea_archivo = texto;
 			lineatxt.write(linea_archivo + "\r\n");
 			lineatxt.close();
-			rta = "Vivienda Ingresada con Exito";
+			rta = "Arrendatario Ingresado con Exito";
 		} catch (Exception e) {
 			rta = "No fue posible registrar la informacion en el archivo";
 		}

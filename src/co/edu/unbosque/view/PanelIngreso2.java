@@ -78,7 +78,7 @@ public class PanelIngreso2 extends JPanel {
 		CuotaMensual.setFont(new Font("Arial", Font.PLAIN, 16));
 		add(CuotaMensual);
 
-		//Crear JTextField FechadePago
+		// Crear JTextField FechadePago
 		FechadePago = new JTextField();
 		FechadePago.setBounds(75, 250, 280, 40);
 		TitledBorder borderFechadePago = BorderFactory.createTitledBorder("Fecha de Pago");
@@ -86,7 +86,6 @@ public class PanelIngreso2 extends JPanel {
 		FechadePago.setBorder(new CompoundBorder(borderFechadePago, emptyBorderFechadePago));
 		FechadePago.setFont(new Font("Arial", Font.PLAIN, 16));
 		add(FechadePago);
-		
 
 		// // Botones Escribir
 		// boton_escribir = new JButton("Escribir");
@@ -169,6 +168,14 @@ public class PanelIngreso2 extends JPanel {
 
 	public void setBoton_borrar(JButton boton_borrar) {
 		this.boton_borrar = boton_borrar;
+	}
+
+	public JTextField getFechadePago() {
+		return this.FechadePago;
+	}
+
+	public void setFechadePago(JTextField FechadePago) {
+		this.FechadePago = FechadePago;
 	}
 
 }

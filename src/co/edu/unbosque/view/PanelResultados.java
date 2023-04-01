@@ -6,7 +6,6 @@ import javax.swing.JTextArea;
 import javax.swing.border.TitledBorder;
 import java.awt.Color;
 
-
 public class PanelResultados extends JPanel {
 
 	private JTextArea area_texto;
