@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/steven/Downloads/P12023-PersistenciaTXT_2/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+2030047718.index
+3468314333.index

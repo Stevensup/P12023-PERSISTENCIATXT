@@ -25,11 +25,10 @@ public class Archivo {
 		BufferedReader linea = null;
 		String contenido = "";
 		try {
-
 			fis = new FileInputStream(file);
 			isr = new InputStreamReader(fis);
 			linea = new BufferedReader(isr);
-
+	
 			if (file.exists()) {
 				String linea_leida = linea.readLine();
 				contenido = linea_leida;
@@ -39,15 +38,22 @@ public class Archivo {
 						contenido += "\n" + linea_leida;
 					}
 				}
-				linea.close();
 				rta = contenido;
 			} else {
 				rta = "El archivo no existe";
 			}
 		} catch (Exception e) {
-			rta = "El archiv no pudo ser leido";
+			rta = "El archivo no pudo ser leido";
+		} finally {
+			try {
+				if (linea != null) linea.close();
+				if (isr != null) isr.close();
+				if (fis != null) fis.close();
+			} catch (Exception e) {
+				rta = "No se pudo cerrar el archivo correctamente";
+			}
 		}
-
+	
 		return rta;
 	}
 

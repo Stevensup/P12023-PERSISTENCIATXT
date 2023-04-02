@@ -38,7 +38,10 @@ public class Documento2 {
 	}
 
 	public String obtenerNumeroInquilinos() {
-		return null;
+		String contenido = leerDocumento2();
+		String[] lineas = contenido.split("\r\n");
+		int numeroInquilinos = lineas.length;
+		return String.valueOf(numeroInquilinos);
 	}
 
 }

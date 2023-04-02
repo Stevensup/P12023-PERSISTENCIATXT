@@ -15,8 +15,6 @@ public class PanelIngreso2 extends JPanel {
 
 	private JTextField Inquilino;
 	private JTextField Documento_Id;
-	private JTextField Asignacion;
-	private JTextField Nombre;
 	private JTextField CuotaMensual;
 	private JTextField FechadePago;
 
@@ -51,28 +49,12 @@ public class PanelIngreso2 extends JPanel {
 		Documento_Id.setFont(new Font("Arial", Font.PLAIN, 16));
 		add(Documento_Id);
 
-		// Crear JTextField Asignacion
-		Asignacion = new JTextField();
-		Asignacion.setBounds(75, 115, 280, 40);
-		TitledBorder borderAsignacion = BorderFactory.createTitledBorder("Número de Habitaciones");
-		Border emptyBorderAsignacion = BorderFactory.createEmptyBorder(0, 5, 0, 5);
-		Asignacion.setBorder(new CompoundBorder(borderAsignacion, emptyBorderAsignacion));
-		Asignacion.setFont(new Font("Arial", Font.PLAIN, 16));
-		add(Asignacion);
 
-		// Crear JTextField Nombre
-		Nombre = new JTextField();
-		Nombre.setBounds(75, 160, 280, 40);
-		TitledBorder borderNombre = BorderFactory.createTitledBorder("Dirección");
-		Border emptyBorderNombre = BorderFactory.createEmptyBorder(0, 5, 0, 5);
-		Nombre.setBorder(new CompoundBorder(borderNombre, emptyBorderNombre));
-		Nombre.setFont(new Font("Arial", Font.PLAIN, 16));
-		add(Nombre);
 
 		// Crear JTextField CuotaMensual
 		CuotaMensual = new JTextField();
 		CuotaMensual.setBounds(75, 205, 280, 40);
-		TitledBorder borderCuotaMensual = BorderFactory.createTitledBorder("Tipo de Cuota Mensual");
+		TitledBorder borderCuotaMensual = BorderFactory.createTitledBorder("Cuota Mensual");
 		Border emptyBorderCuotaMensual = BorderFactory.createEmptyBorder(0, 5, 0, 5);
 		CuotaMensual.setBorder(new CompoundBorder(borderCuotaMensual, emptyBorderCuotaMensual));
 		CuotaMensual.setFont(new Font("Arial", Font.PLAIN, 16));

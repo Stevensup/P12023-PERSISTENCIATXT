@@ -1,9 +1,25 @@
 
-Inquilino # null1 [ Documento de Identificación: 
- ] - [Asignación: Propiedad # null] Nombre: 
-Cuota Mensual: $  COP / ++++++++++++++++
-Fechas de Pago: 
-Inquilino # null1 [ Documento de Identificación: 
- ] - [Asignación: Propiedad # null] Nombre: 
-Cuota Mensual: $  COP / ++++++++++++++++
-Fechas de Pago: 
+Inquilino sadasada11 [ Documento de Identificación: asdasasada
+ ] - [Asignación: Propiedad # 2] 
+Cuota Mensual: $ sadasada COP / Fecha de Pago: asdasada
+******************************************************
+
+Inquilino sada11 [ Documento de Identificación: sadsa
+ ] - [Asignación: Propiedad # 1] 
+Cuota Mensual: $ sada COP / Fecha de Pago: sada
+******************************************************
+
+Inquilino sadasada11 [ Documento de Identificación: sadsasada
+ ] - [Asignación: Propiedad # 2] 
+Cuota Mensual: $ sadaasda COP / Fecha de Pago: asdsasada
+******************************************************
+
+Inquilino juan ochoa11 [ Documento de Identificación: 1128939
+ ] - [Asignación: Propiedad # 1] 
+Cuota Mensual: $ 123000 COP / Fecha de Pago: 23
+******************************************************
+
+Inquilino 11 [ Documento de Identificación: 
+ ] - [Asignación: Propiedad # 1] 
+Cuota Mensual: $  COP / Fecha de Pago: 
+******************************************************

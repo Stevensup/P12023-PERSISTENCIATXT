@@ -14,6 +14,7 @@ public class Controller implements ActionListener {
      private VentanaPrincipal vista;
      private Documento documento;
      private Documento2 documento2;
+     private int numeroPropiedades = 0; // variable para llevar el contador de propiedades
 
      public Controller() {
           vista = new VentanaPrincipal();
@@ -47,35 +48,33 @@ public class Controller implements ActionListener {
                String propietario = vista.getPanel_botones().getPropietario().getText();
                String inquilino = vista.getPanel_botones2().getInquilino().getText();
                String documentoId = vista.getPanel_botones2().getDocumento_Id().getText();
-               String asignacion = vista.getPanel_botones2().getAsignacion().getText();
-               String nombre = vista.getPanel_botones2().getNombre().getText();
                String cuotaMensual = vista.getPanel_botones2().getCuotaMensual().getText();
                String fechadePago = vista.getPanel_botones2().getFechadePago().getText();
                if (documento.getContenido() != null) {
-                   texto = documento.actualizarDocumento(documento.getContenido() + "\n" +
-                       "Propiedad # " + (documento.obtenerNumeroPropiedades() + 1) + 
-                       " [ Dirección: " + (direccion != null ? direccion : "") + " ]\n" +
-                       "Tamaño: " + (tamaño != null ? tamaño : "") + "\n" +
-                       "N° de Habitaciones: " + (habitaciones != null ? habitaciones : "") + 
-                       " Propietario: " + (propietario != null ? propietario : "") +
-                       "\n******************************************************");
-               
-                   texto2 = documento2.actualizarDocumento2(documento2.getContenido2() + "\n" +
-                       "Inquilino # " + (documento2.obtenerNumeroInquilinos() + 1) + 
-                       " [ Documento de Identificación: " + (documentoId != null ? documentoId : "") + "\n" 
-                       + " ] - [Asignación: Propiedad # " + (documento.obtenerNumeroPropiedades()) + 
-                       (asignacion != null ? asignacion : "") + "] Nombre: " + (nombre != null ? nombre : "") +
-                       "\nCuota Mensual: $ " + (cuotaMensual != null ? cuotaMensual : "") + " COP / ++++++++++++++++" +
-                       "\nFechas de Pago: " + (fechadePago != null ? fechadePago : ""));
+                    texto = documento.actualizarDocumento(documento.getContenido() + "\n" +
+                              "Propiedad # " + (++numeroPropiedades) + // Incrementamos la variable de contador
+                              " [ Dirección: " + (direccion != null ? direccion : "") + " ]\n" +
+                              "Tamaño: " + (tamaño != null ? tamaño : "") + "m²" + "\n" +
+                              "N° de Habitaciones: " + (habitaciones != null ? habitaciones : "") +
+                              " Propietario: " + (propietario != null ? propietario : "") +
+                              "\n******************************************************");
+
+                    texto2 = documento2.actualizarDocumento2(texto2 + "\n" +
+                              "Inquilino "+ inquilino + (documento2.obtenerNumeroInquilinos() + 1) +
+                              " [ Documento de Identificación: " + (documentoId != null ? documentoId : "") + "\n"
+                              + " ]" + " - [Asignación: Propiedad # " + numeroPropiedades +
+                              "] \nCuota Mensual: $ " + (cuotaMensual != null ? cuotaMensual : "")
+                              + " COP / Fecha de Pago: " + (fechadePago != null ? fechadePago : "")+
+                              "\n******************************************************");
                } else {
-                   texto = documento.actualizarDocumento("Propiedad # 1 [ Dirección: " + 
-                       (direccion != null ? direccion : "") + " ]\n" +
-                       "Tamaño: " + (tamaño != null ? tamaño : "") + "\n" +
-                       "N° de Habitaciones: " + (habitaciones != null ? habitaciones : "") + 
-                       " Propietario: " + (propietario != null ? propietario : "") + 
-                       "\n******************************************************");
+                    texto = documento.actualizarDocumento("Propiedad # 1 [ Dirección: " +
+                              (direccion != null ? direccion : "") + " ]\n" +
+                              "Tamaño: " + (tamaño != null ? tamaño : "") + "\n" +
+                              "N° de Habitaciones: " + (habitaciones != null ? habitaciones : "") +
+                              " Propietario: " + (propietario != null ? propietario : "") +
+                              "\n******************************************************");
                }
-               
+
                vista.getPanel_archivo().getArea_texto().setText(texto);
                vista.getPanel_archivo2().getArea_texto().setText(texto2);
           } else if (comando.equals("BORRAR")) {

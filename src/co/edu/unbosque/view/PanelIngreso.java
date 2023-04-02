@@ -18,7 +18,6 @@ public class PanelIngreso extends JPanel {
 	private JTextField Tamaño;
 	private JComboBox<String> Nhabitaciones;
 	private JTextField Direccion;
-	private JTextField Propiedad;
 
 	private JButton boton_escribir;
 	private JButton boton_ver;
@@ -73,14 +72,6 @@ public class PanelIngreso extends JPanel {
 		Direccion.setFont(new Font("Arial", Font.PLAIN, 16));
 		add(Direccion);
 
-		// Crear JTextField Propiedad
-		Propiedad = new JTextField();
-		Propiedad.setBounds(75, 215, 280, 40);
-		TitledBorder borderPropiedad = BorderFactory.createTitledBorder("Tipo de Propiedad");
-		Border emptyBorderPropiedad = BorderFactory.createEmptyBorder(0, 5, 0, 5);
-		Propiedad.setBorder(new CompoundBorder(borderPropiedad, emptyBorderPropiedad));
-		Propiedad.setFont(new Font("Arial", Font.PLAIN, 16));
-		add(Propiedad);
 
 		// Botones Escribir
 		boton_escribir = new JButton("Escribir");
