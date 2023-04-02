@@ -83,3 +83,8 @@ Inquilino ghjghjgnull1 [ Documento de Identificación: hgjhgjg
  ] - [Asignación: Propiedad # 2] 
 Cuota Mensual: $ gjghjghjgghj COP / Fecha de Pago: ghjgghjggj
 ******************************************************
+
+Inquilino asdanull1 [ Documento de Identificación: asda
+ ] - [Asignación: Propiedad # 1] 
+Cuota Mensual: $ asda COP / Fecha de Pago: asd
+******************************************************
