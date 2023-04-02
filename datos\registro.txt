@@ -1,5 +1,9 @@
 
-Propiedad # 1 [ Dirección: sad ]
-Tamaño: sadm²
-N° de Habitaciones: ESTUDIO Propietario: asds
+Propiedad # 1 [ Dirección: gdfgdf ]
+Tamaño: asdasdam²
+N° de Habitaciones: ESTUDIO Propietario: sassada
+******************************************************
+Propiedad # 2 [ Dirección: gdfgdfghjg ]
+Tamaño: asdasdahgjgm²
+N° de Habitaciones: 2 HABITACIONES Propietario: sassadagjhghj
 ******************************************************

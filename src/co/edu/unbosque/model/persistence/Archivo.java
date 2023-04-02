@@ -10,13 +10,27 @@ public class Archivo {
 
 	private File file;
 
+	/**
+	 * Constructor sin parámetros de la clase Archivo, crea un objeto Archivo con el archivo por defecto "datos\\registro.txt".
+	 */
+
 	public Archivo() {
 		file = new File("datos\\registro.txt");
 	}
 
+	/**
+	 * Constructor de la clase Archivo que recibe como parámetro un objeto de tipo File.
+	 * @param file Objeto File que representa el archivo a manipular.
+	 */
+
 	public Archivo(File file) {
 		this.file = file;
 	}
+
+	/**
+	 * Método que permite leer el contenido del archivo.
+	 * @return Una cadena de caracteres que representa el contenido del archivo.
+	 */
 
 	public String leerArchivo() {
 		String rta = "";
@@ -57,6 +71,12 @@ public class Archivo {
 		return rta;
 	}
 
+	/**
+	 * Método que permite escribir en el archivo.
+	 * @param texto Cadena de caracteres que se desea escribir en el archivo.
+	 * @return Una cadena de caracteres que indica si el registro en el archivo fue exitoso o no.
+	 */
+	
 	public String escribirArchivo(String texto) {
 		String rta = "";
 		try {

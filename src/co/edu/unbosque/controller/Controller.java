@@ -16,12 +16,21 @@ public class Controller implements ActionListener {
      private Documento2 documento2;
      private int numeroPropiedades = 0; // variable para llevar el contador de propiedades
 
+      /**
+      * Constructor de la clase Controller, inicializa la vista y los modelos a utilizar.
+      */
+
      public Controller() {
           vista = new VentanaPrincipal();
           documento = new Documento();
           documento2 = new Documento2();
           asignarOyentes();
+          
      }
+
+     /**
+      * Método encargado de asignar los listeners a los botones de la vista.
+      */
 
      public void asignarOyentes() {
           vista.getPanel_botones().getBoton_borrar().addActionListener(this);
@@ -29,6 +38,13 @@ public class Controller implements ActionListener {
           vista.getPanel_botones().getBoton_ver().addActionListener(this);
      }
 
+
+     /**
+      * Método que maneja los eventos de los botones de la vista.
+      * @param e Evento de botón
+      */
+
+      
      @Override
      public void actionPerformed(ActionEvent e) {
 

@@ -23,3 +23,63 @@ Inquilino 11 [ Documento de Identificación:
  ] - [Asignación: Propiedad # 1] 
 Cuota Mensual: $  COP / Fecha de Pago: 
 ******************************************************
+
+Inquilino sad11 [ Documento de Identificación: sad
+ ] - [Asignación: Propiedad # 1] 
+Cuota Mensual: $ sada COP / Fecha de Pago: sada
+******************************************************
+
+Inquilino sadnull1 [ Documento de Identificación: sada
+ ] - [Asignación: Propiedad # 1] 
+Cuota Mensual: $ sada COP / Fecha de Pago: sada
+******************************************************
+
+Inquilino sadsanull1 [ Documento de Identificación: sada
+ ] - [Asignación: Propiedad # 1] 
+Cuota Mensual: $ sada COP / Fecha de Pago: asda
+******************************************************
+
+Inquilino sadsaasdanull1 [ Documento de Identificación: sadaasda
+ ] - [Asignación: Propiedad # 2] 
+Cuota Mensual: $ sadaasda COP / Fecha de Pago: asdaasda
+******************************************************
+
+Inquilino asdanull1 [ Documento de Identificación: sada
+ ] - [Asignación: Propiedad # 1] 
+Cuota Mensual: $ sada COP / Fecha de Pago: asda
+******************************************************
+
+Inquilino asdafdggfdfnull1 [ Documento de Identificación: sadafdgd
+ ] - [Asignación: Propiedad # 2] 
+Cuota Mensual: $ sadadfgd COP / Fecha de Pago: asdadfgdg
+******************************************************
+
+Inquilino asdanull1 [ Documento de Identificación: asda
+ ] - [Asignación: Propiedad # 1] 
+Cuota Mensual: $ asda COP / Fecha de Pago: asda
+******************************************************
+
+Inquilino asdafghfnull1 [ Documento de Identificación: gfhfasda
+ ] - [Asignación: Propiedad # 2] 
+Cuota Mensual: $ asdafghfg COP / Fecha de Pago: asdafghf
+******************************************************
+
+Inquilino ASDAnull1 [ Documento de Identificación: SADA
+ ] - [Asignación: Propiedad # 1] 
+Cuota Mensual: $ SADA COP / Fecha de Pago: SADA
+******************************************************
+
+Inquilino FHGGASDAnull1 [ Documento de Identificación: SADAFGHF
+ ] - [Asignación: Propiedad # 2] 
+Cuota Mensual: $ FGHFSADA COP / Fecha de Pago: SADAGHF
+******************************************************
+
+Inquilino hgkgnull1 [ Documento de Identificación: hgj
+ ] - [Asignación: Propiedad # 1] 
+Cuota Mensual: $ gjghj COP / Fecha de Pago: ghjg
+******************************************************
+
+Inquilino ghjghjgnull1 [ Documento de Identificación: hgjhgjg
+ ] - [Asignación: Propiedad # 2] 
+Cuota Mensual: $ gjghjghjgghj COP / Fecha de Pago: ghjgghjggj
+******************************************************

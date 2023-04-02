@@ -10,13 +10,27 @@ public class Archivo2 {
 
 	private File file;
 
+	/**
+	 * Constructs an instance of the Archivo2 class and initializes the file attribute with a default file location.
+	 */
+
 	public Archivo2() {
 		file = new File("datos\\registro2.txt");
 	}
 
+	/**
+	 * Constructs an instance of the Archivo2 class and initializes the file attribute with a given file location.
+	 * @param file The file to be used for reading and writing text information.
+	 */
+
 	public Archivo2(File file) {
 		this.file = file;
 	}
+
+	/**
+	 * Reads the text information stored in the file and returns it as a string.
+	 * @return A string with the text information stored in the file, or an error message if the file could not be read.
+	 */
 
 	public String leerArchivo2() {
 		String rta = "";
@@ -57,6 +71,12 @@ public class Archivo2 {
 		return rta;
 	}
 
+	/**
+	 * Writes the given text information to the file.
+	 * @param texto The text information to be written to the file.
+	 * @return A message indicating whether the information was successfully written to the file or not.
+	 */
+	
 	public String escribirArchivo2(String texto) {
 		String rta = "";
 		try {
