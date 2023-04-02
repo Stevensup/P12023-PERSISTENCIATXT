@@ -1,6 +1,7 @@
 package co.edu.unbosque.view;
 
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
@@ -15,7 +16,7 @@ public class PanelIngreso extends JPanel {
 
 	private JTextField Propietario;
 	private JTextField Tamaño;
-	private JTextField Nhabitaciones;
+	private JComboBox<String> Nhabitaciones;
 	private JTextField Direccion;
 	private JTextField Propiedad;
 
@@ -51,7 +52,11 @@ public class PanelIngreso extends JPanel {
 		add(Tamaño);
 
 		// Crear JTextField Nhabitaciones
-		Nhabitaciones = new JTextField();
+		Nhabitaciones = new JComboBox<String>();
+		Nhabitaciones.addItem("ESTUDIO");
+		Nhabitaciones.addItem("1 HABITACION");
+		Nhabitaciones.addItem("2 HABITACIONES");
+		Nhabitaciones.addItem("3 HABITACIONES");
 		Nhabitaciones.setBounds(75, 125, 280, 40);
 		TitledBorder borderNhabitaciones = BorderFactory.createTitledBorder("Número de Habitaciones");
 		Border emptyBorderNhabitaciones = BorderFactory.createEmptyBorder(0, 5, 0, 5);
@@ -112,13 +117,15 @@ public class PanelIngreso extends JPanel {
 		this.Tamaño = Tamaño;
 	}
 
-	public JTextField getNhabitaciones() {
+
+	public JComboBox<String> getNhabitaciones() {
 		return this.Nhabitaciones;
 	}
 
-	public void setNhabitaciones(JTextField Nhabitaciones) {
+	public void setNhabitaciones(JComboBox<String> Nhabitaciones) {
 		this.Nhabitaciones = Nhabitaciones;
 	}
+	
 
 	public JTextField getDireccion() {
 		return this.Direccion;
@@ -159,5 +166,6 @@ public class PanelIngreso extends JPanel {
 	public void setBoton_borrar(JButton boton_borrar) {
 		this.boton_borrar = boton_borrar;
 	}
+
 
 }

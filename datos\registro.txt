@@ -1,5 +1,9 @@
 
 Propiedad # null1 [ Dirección:  ]
 Tamaño: 
-N° de Habitaciones:  Propietario: 
+N° de Habitaciones: 1 HABITACION Propietario: 
+******************************************************
+Propiedad # null1 [ Dirección:  ]
+Tamaño: 
+N° de Habitaciones: 2 HABITACIONES Propietario: 
 ******************************************************

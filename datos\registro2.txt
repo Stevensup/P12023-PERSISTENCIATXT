@@ -1,4 +1,9 @@
 
-Inquilino # null1 [ Documento de Identificación:  ] - [Asignación: Propiedad # null] Nombre: 
+Inquilino # null1 [ Documento de Identificación: 
+ ] - [Asignación: Propiedad # null] Nombre: 
+Cuota Mensual: $  COP / ++++++++++++++++
+Fechas de Pago: 
+Inquilino # null1 [ Documento de Identificación: 
+ ] - [Asignación: Propiedad # null] Nombre: 
 Cuota Mensual: $  COP / ++++++++++++++++
 Fechas de Pago: 
